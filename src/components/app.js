@@ -18,10 +18,11 @@ class App extends React.Component {
         return (<>
             <button onClick={e => {
                 e.preventDefault(); //annuler le comportement par defaut
-                e.stopPropagation();// a voir au profondeur
+                e.stopPropagation();// a voir au profondeur a l ins
                 this.setState({ count: this.state.count + 1 });
             }} >
                 onClick
+
                 </button>
             <input type="text" onChange={e => this.setState({ value: e.target.value })}></input>
             <div>
